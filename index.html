@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DumittaStore</title>
+</head>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <img src="./img/Logo Animales Gatos Cartel Mascotas Kawaii Ilustración Beige Marrón.png" width="250" height="200">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Cards -->
+
+    
+    <div class="container">
+        <h2>Catálogo de Productos</h2>
+    </div>
+    
+    <div class="container-cards">
+        
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Collares</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/collar.jfif" class="rounded float-start" alt="...">
+                <p class="card-text">Hermosos Collares para todas tus mascotas y de todos los colores</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Pecheras</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/arnes.png" class="rounded float-start" alt="...">
+                <p class="card-text">Pecheras de todos los tamaños para los consentidos del hogar</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-cards">
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Snacks</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/snack.jpg" class="rounded float-start" alt="...">
+                <p class="card-text">Los mas deliciosos y nutritivos snacks para premiar a los consentiidos</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Canil</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/canil.jpg" class="rounded float-start" alt="...">
+                <p class="card-text">Canil para la seguridad de tu mascota en los viajes</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Bozal</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/bozal.jfif" class="rounded float-start" alt="...">
+                <p class="card-text">Aunque no nos gusten,a veces son necesarios</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Juguetes</div>
+            <div class="card-body">
+                <img class="img_inicio" src="./img/juguetes.jfif" class="rounded float-start" alt="...">
+                <p class="card-text">Variedad de jueguetes para el entretenimiento</p>
+                    <button type="button" class="btn btn-dark">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+            <!-- Cart -->
+            
+        <div class="container">
+            <h2>Tu Compra</h2>
+            <em>Tus productos seleccionados...</em>.
+            
+                <div class="container-cart">
+                    
+                    <h4 class="card-title">Producto C</h4>
+                    <p class="card-text">Precio: </p>
+                    <button type="button" class="btn btn-outline-primary">Eliminar</button>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <!-- Form -->
+
+            <div>
+                <form class="container">
+    
+                    <h2 class=" text-center">Formulario</h2>
+                    <form class="row g-3 needs-validation" novalidate>
+        
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+        
+                        <div class="mb-3">
+                            <label for="last-name" class="form-label">Apellido</label>
+                            <input type="text" class="form-control"  id="Apellido"  required>
+                        </div>
+        
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="inputEmail4" required>
+                        </div>
+        
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="inputAddress" required>
+                        </div>
+        
+                        <div class="col-12 text-center">
+                            <input class="btn btn-outline-primary" type="reset" value="Borrar">
+                            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script src="app.js" async></script>
+        </body>
+        </html>
