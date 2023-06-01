@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DumittaStore</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class ="logo"src="./img/Logo Animales Gatos Cartel Mascotas Kawaii Ilustración Beige Marrón.png"></a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Que estas Buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">Carrito</a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cards -->
+
+<main>
+    <h2>Carritoo</h2>
+
+    <div class="contenedor-carrito">
+        <p id="carrito-vacio" class="carrito-vacio">Que Esperas Para Elegir Algo?...</p>
+        <div class="productos">
+            <div class="producto">
+                <img class="producto-img"src="./img/collar.jfif" alt="">
+                <div class="titulo">
+                    <small>Nombre</small>
+                    <h3>Collar</h3>
+                </div>
+                <div class="carrito-cantidad">
+                    <small>Cantidad</small>
+                    <p>1</p>
+                </div>
+                <div class="carrito-precio">
+                    <small>Precio</small>
+                    <p>$1.000</p>
+                </div>
+                <div class="carrito-subtotal">
+                    <small>Sub-Total</small>
+                    <p>$1.0000</p>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Eliminar</button>
+            </div>
+        </div>
+        <div class="carrito-vaciar">
+            <div class="carrito-vaciar-izquierda">
+                <button class="boton-carrito-vaciar">Vaciar Carrito</button>
+            </div>
+            <div class="carrito-vaciar-derecha">
+                <div class="carrito-total">
+                    <p>Total</p>
+                    <p id="total">$1.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+   
+<!-- <footer>
+    <ul class="footer_ul">
+        <li class="footer_ul__li"><a href="https://www.instagram.com/"target="_blank"><img src="./img/instagram.jpg" alt="Logo de Instagram"></a></li>
+        <li class="footer_ul__li"><a href="https://es-la.facebook.com/"target="_blank"><img src="./img/facebook.png" alt="Logo de facebook"></a></li>            <li class="footer_ul__li"><a href="https://web.whatsapp.com/"target="_blank"><img src="./img/whatsapp.png" alt=" Logo de Whats app"></a></li>
+    </ul> 
+</footer>  -->
+        <script src="./carrito.js"></script>
+</body>
+</html>

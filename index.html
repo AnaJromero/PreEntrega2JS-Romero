@@ -8,18 +8,41 @@
     <link rel="stylesheet" href="styles.css">
     <title>DumittaStore</title>
 </head>
-
+<body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <img src="./img/Logo Animales Gatos Cartel Mascotas Kawaii Ilustración Beige Marrón.png" width="250" height="200">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
-                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+    
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-cart"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                        />
+                    </svg>
+                <div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+                <!-- <a class="navbar-brand" href="index.html"><img class ="logo"src="./img/Logo Animales Gatos Cartel Mascotas Kawaii Ilustración Beige Marrón.png"></a> -->
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Que estas Buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">Carrito <span id="numerito" class="numerito">0</span></a>
+                </form> -->
+            </div>
+        </nav>
+    </header>
+
     <!-- Cards -->
 
     
@@ -29,15 +52,15 @@
     
     <div class="container-cards">
         
-        <div class="card border-dark mb-3" style="max-width: 20rem;">
+        <!-- <div class="articulo card border-dark mb-3" style="max-width: 20rem;">
             <div class="card-header">Collares</div>
             <div class="card-body">
                 <img class="img_inicio" src="./img/collar.jfif" class="rounded float-start" alt="...">
                 <p class="card-text">Hermosos Collares para todas tus mascotas y de todos los colores</p>
                     <button type="button" class="btn btn-dark">Agregar al carrito</button>
             </div>
-        </div>
-        <div class="card border-dark mb-3" style="max-width: 20rem;">
+        </div> -->
+        <!-- <div class="card border-dark mb-3" style="max-width: 20rem;">
             <div class="card-header">Pecheras</div>
             <div class="card-body">
                 <img class="img_inicio" src="./img/arnes.png" class="rounded float-start" alt="...">
@@ -79,24 +102,8 @@
                 <p class="card-text">Variedad de jueguetes para el entretenimiento</p>
                     <button type="button" class="btn btn-dark">Agregar al carrito</button>
             </div>
-        </div>
+        </div> -->
     </div>
-
-            <!-- Cart -->
-            
-        <div class="container">
-            <h2>Tu Compra</h2>
-            <em>Tus productos seleccionados...</em>.
-            
-                <div class="container-cart">
-                    
-                    <h4 class="card-title">Producto C</h4>
-                    <p class="card-text">Precio: </p>
-                    <button type="button" class="btn btn-outline-primary">Eliminar</button>
-                </div>
-            </div>
-            
-            <hr>
             
             <!-- Form -->
 
@@ -134,6 +141,6 @@
                     </div>
                 </form>
             </div>
-            <script src="app.js" async></script>
+            <script src="index.js"></script>
         </body>
         </html>
