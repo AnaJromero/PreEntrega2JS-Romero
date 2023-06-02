@@ -88,7 +88,17 @@ function sumarBoton(){
     });
 }
 
-const articulosEnElCarro = [ ];
+let articulosEnElCarro;
+
+let articulosEnElCarroLocalStorage = localStorage.getItem("articulos-en-el-carro");
+
+if(articulosEnElCarroLocalStorage){
+    articulosEnElCarro = JSON.parse(articulosEnElCarroLocalStorage);
+    refrescarElNumero();
+}else{
+    articulosEnElCarro = [ ];
+}
+
 
 function agregarAlCarro(evento){
 
