@@ -1,60 +1,17 @@
-const articulos=[
-    {   
-        id:"collar",
-        titulo: "collar",
-        imagen: "./img/collar.jfif",
-        detalle: "Hermosos Collares para todas tus mascotas y de todos los colores",
-        precio: 1000,
-        cantidad: 1 
-    },
-    {
-        id:"arnes",
-        titulo: "arnes",
-        imagen: "./img/arnes.png",
-        detalle:"Pecheras de todos los tamaños para los consentidos del hogar",
-        precio: 1000,
-        cantidad: 1 
-    },
-    {
-        id:"snack",
-        titulo: "snack",
-        imagen: "./img/snack.jpg",
-        detalle:"Los mas deliciosos y nutritivos snacks para premiar a los consentiidos",
-        precio: 1000,
-        cantidad: 1 
-    },
-    {
-        id:"canil",
-        titulo: "canil",
-        imagen: "./img/canil.jpg",
-        detalle: "Canil para la seguridad de tu mascota en los viajes",
-        precio: 1000,
-        cantidad: 1 
-    },
-    {
-        id:"bozal",
-        titulo: "bozal",
-        imagen: "./img/bozal.jfif",
-        detalle:"Aunque no nos gusten,a veces son necesarios",
-        precio: 1000,
-        cantidad: 1 
-    },
-    {
-        id:"juguetes",
-        titulo: "juguetes",
-        imagen: "./img/juguetes.jfif",
-        detalle: "Hermosos Collares para todas tus mascotas y de todos los colores",
-        precio: 1000,
-        cantidad: 1 
-    }
-];
+let articulos=[];
+
+fetch("./tarjetas.json")
+    .then(responsive => responsive.json())
+    .then(data => {
+        articulos = data;
+        subirArticulos(articulos);
+    })
+
+
 
 const contenedorArticulos = document.querySelector (".container-cards");
 let boton = document.querySelectorAll(".boton-agregar");
 let numeroDelCarrito = document.querySelector("#contador-productos");
-
-
-
 
 function subirArticulos(){
 
@@ -78,7 +35,7 @@ function subirArticulos(){
     })
     sumarBoton();
 }
-subirArticulos();
+
 
 function sumarBoton(){
     boton = document.querySelectorAll(".boton-agregar");
