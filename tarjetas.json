@@ -2,49 +2,48 @@
     {   
         "id":"collar",
         "titulo": "collar",
-        "imagen": "./img/collar.jfif",
+        "imagen": "./img/collar.JPG",
         "detalle": "Hermosos Collares para todas tus mascotas y de todos los colores",
-        "precio": 1000 
-        
+        "precio": 12000 
     },
+
     {
         "id":"arnes",
         "titulo": "arnes",
-        "imagen": "./img/arnes.png",
+        "imagen": "./img/arnes.JPG",
         "detalle":"Pecheras de todos los tamaños para los consentidos del hogar",
-        "precio": 1000
-        
+        "precio": 30150
     },
+
     {
         "id":"snack",
         "titulo": "snack",
-        "imagen": "./img/snack.jpg",
+        "imagen": "./img/snack.JPG",
         "detalle":"Los mas deliciosos y nutritivos snacks para premiar a los consentidos",
-        "precio": 1000
-        
+        "precio": 1990
     },
+
     {
         "id":"canil",
         "titulo": "canil",
-        "imagen": "./img/canil.jpg",
+        "imagen": "./img/canil.JPG",
         "detalle": "Canil para la seguridad de tu mascota en los viajes",
-        "precio": 1000
-        
+        "precio": 22264
     },
+
     {
         "id":"bozal",
         "titulo": "bozal",
-        "imagen": "./img/bozal.jfif",
+        "imagen": "./img/bozal.JPG",
         "detalle":"Aunque no nos gusten,a veces son necesarios",
-        "precio": 1000
-        
+        "precio": 19990
     },
+
     {
         "id":"juguetes",
         "titulo": "juguetes",
-        "imagen": "./img/juguetes.jfif",
+        "imagen": "./img/juguetes.JPG",
         "detalle": "Hermosos Collares para todas tus mascotas y de todos los colores",
-        "precio": 1000
-        
+        "precio": 10675
     }
 ]

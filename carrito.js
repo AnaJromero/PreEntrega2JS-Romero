@@ -4,7 +4,6 @@ articulosEnElCarro = JSON.parse(articulosEnElCarro);
 const vacio = document.querySelector("#vacio");
 const articulos =document.querySelector(".articulos");
 const carroVaciar= document.querySelector(".carro-vaciar");
-const carroComprar = document.querySelector(".carro-comprar");
 let eliminar =document.querySelectorAll(".boton-eliminar");
 const numeroTotal = document.querySelector("#total");
 const comprar = document.querySelector(".comprar");
@@ -12,13 +11,11 @@ const comprar = document.querySelector(".comprar");
 function subirArticulosCarro(){
 
     if(articulosEnElCarro && articulosEnElCarro.length > 0){
-/*         (productosEnCarrito && productosEnCarrito.length > 0)
- */
+
         vacio.classList.add("disabled");
         articulos.classList.remove("disabled");
         carroVaciar.classList.remove("disabled");
-        /* carroComprar.classList.add("disabled"); */
-    
+
         articulos.innerHTML = "";
         articulosEnElCarro.forEach(articulo =>{
     
@@ -43,7 +40,7 @@ function subirArticulosCarro(){
                             <p>$${articulo.precio*articulo.cantidad}</p>
                         </div>
                         <button type="button" class="boton-eliminar btn btn-outline-primary" id="${articulo.id}">Eliminar</button>
-            `;
+                            `;
             articulos.append(div);
         })
     
@@ -52,7 +49,6 @@ function subirArticulosCarro(){
         vacio.classList.remove("disabled");
         articulos.classList.add("disabled");
         carroVaciar.classList.add("disabled");
-        /* carroComprar.classList.add("disabled"); */
     }
 
     refrescarBotonEliminar();
@@ -61,48 +57,42 @@ function subirArticulosCarro(){
 
 subirArticulosCarro();
 
-
 function refrescarBotonEliminar(){
-    eliminar = document.querySelectorAll(".boton-eliminar");
 
+    eliminar = document.querySelectorAll(".boton-eliminar");
     eliminar.forEach(boton =>{
         boton.addEventListener("click",eliminarDelCarro);
     });
 }
 
 function eliminarDelCarro(evento){
-    const idBoton = evento.currentTarget.id;
-/*     const articuloEliminado = articulosEnElCarro.find(articulo => articulo.id === idBoton);
- */   
+    const idBoton = evento.currentTarget.id; 
     const index = articulosEnElCarro.findIndex(articulo => articulo.id ===idBoton);  
 
     articulosEnElCarro.splice(index,1);
     subirArticulosCarro();
 
     localStorage.setItem("articulos-en-el-carro",JSON.stringify(articulosEnElCarro));
-
 }
 
 function sumarAlTotal(){
     const sumaTotal = articulosEnElCarro.reduce((acumulador,articulo) => acumulador + (articulo.precio * articulo.cantidad), 0 );
-    /* const divTotal = document.querySelector(".total");
-    divTotal.innerHTML = `<p>$${sumaTotal}</p>`; */
+
     total.innerText = `$${sumaTotal}`;
-   /*  total.innerText = `$${sumaTotal}`; */
-} 
+}
 
 comprar.addEventListener("click",hacerLaCompra);
 function hacerLaCompra(){
 
     articulosEnElCarro.length = 0 ;
     localStorage.setItem("articulos-en-el-carro",JSON.stringify(articulosEnElCarro));
-   
+
     vacio.classList.add("disabled");
     articulos.classList.add("disabled");
     carroVaciar.classList.add("disabled");
 
     Swal.fire({
-        position: 'top-end',
+        position: 'center',
         icon: 'success',
         title: 'Muchas Gracias por tu Compra.',
         showConfirmButton: false,
