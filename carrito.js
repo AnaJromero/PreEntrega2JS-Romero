@@ -100,6 +100,13 @@ function hacerLaCompra(){
     vacio.classList.add("disabled");
     articulos.classList.add("disabled");
     carroVaciar.classList.add("disabled");
-    /* carroComprar.classList.remove("disabled"); */
+
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Muchas Gracias por tu Compra.',
+        showConfirmButton: false,
+        timer: 2000
+    })
 }
 

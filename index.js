@@ -7,6 +7,8 @@ fetch("./tarjetas.json")
         subirArticulos(articulos);
     })
 
+fetch("./libreria.js")
+
 
 
 const contenedorArticulos = document.querySelector (".container-cards");
