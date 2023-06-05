@@ -105,7 +105,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-image: url(img/logo.JPG);
+  /* background-image: url(img/logo.JPG);*/
+  background-color:beige;
+
 }
 
 /* hr {
@@ -662,10 +664,12 @@ progress {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   width: 50%;
-  padding:7rem;
+  /* padding:5rem; */
    padding-left: calc(var(--bs-gutter-x) * 0.5); 
   margin-right: auto;
   margin-left: auto;
+  margin-top: 7rem;
+
 }
 
 /* @media (min-width: 576px) {
@@ -3837,6 +3841,9 @@ textarea.form-control-lg {
   color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
+  font-size:x-large;
+  font-family: cursive;
+  margin-left: 3rem;
 }/* 
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
@@ -4267,6 +4274,10 @@ textarea.form-control-lg {
   border-top: 0;
 }
 
+header{
+  background-image: url(./img/logo.JPG);
+  height: 25rem;
+}
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -11318,21 +11329,23 @@ header{
 }
  */
 /*Carrito*/
-/* 
+ 
 .contenedor {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  
+  margin: 5rem;
 }
  
 /* .carro-vaciar,
 .comprar {
-  color: var(--clr-main);
-} */
+
+}  */
+
 .carro-vaciar,
 .comprar {
-  color: var(--clr-main);
+font-size: xx-large;
+justify-content: center;
 }
 .articulos{
   display: flex;
@@ -11362,7 +11375,7 @@ header{
 
 .boton-eliminar {
   border: 0;
-  background-color: transparent;
+  background-color: red;
   color: var(--clr-red);
   cursor: pointer;
 }
@@ -11383,7 +11396,9 @@ header{
 } 
  */
 .vaciar-derecha {
-  display: flex;
+display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
 }
 
 .carro-total {
@@ -11395,6 +11410,11 @@ header{
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   gap: 1rem;
+
+}
+
+.total{
+  font-size: large;
 }
 
 .carro-comprar {
@@ -11427,6 +11447,11 @@ header{
 
 .hidden-cart{
   display: none;
+}
+
+form{
+
+  margin: 4rem;
 }
 
 button {
@@ -11478,9 +11503,10 @@ button:hover div {
  button p {
   font-size: 17px;
   font-weight: bold;
-  color: #ffffff;
+  color:red;
  }
  
  button:active {
   transform: scale(0.95);
  }
+
