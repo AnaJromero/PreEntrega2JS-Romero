@@ -329,7 +329,8 @@ fieldset {
 }
 
 header{
-  background-image: url(./img/logo.jpg);
+
+  background-image: url("./img/logo.png");
   height: 25rem;
 }
 
