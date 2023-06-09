@@ -2,7 +2,7 @@
     {   
         "id":"COLLAR",
         "titulo": "COLLAR",
-        "imagen": "./img/collar.jpg",
+        "imagen": "./img/collar.jfif",
         "detalle": "Hermosos Collares para todas tus mascotas y de todos los colores",
         "precio": 12000 
     },
@@ -10,7 +10,7 @@
     {
         "id":"ARNES",
         "titulo": "ARNES",
-        "imagen": "./img/arnes.jpg",
+        "imagen": "./img/arnes.png",
         "detalle":"Pecheras de todos los tamaños para los consentidos del hogar",
         "precio": 30150
     },
@@ -34,7 +34,7 @@
     {
         "id":"BOZAL",
         "titulo": "BOZAL",
-        "imagen": "./img/bozal.jpg",
+        "imagen": "./img/bozal.jfif",
         "detalle":"Aunque no nos gusten,a veces son necesarios",
         "precio": 19990
     },
@@ -42,7 +42,7 @@
     {
         "id":"JUGUETES",
         "titulo": "JUGUETES",
-        "imagen": "./img/juguetes.jpg",
+        "imagen": "./img/juguetes.jfif",
         "detalle": "Hermosos Collares para todas tus mascotas y de todos los colores",
         "precio": 10675
     }
