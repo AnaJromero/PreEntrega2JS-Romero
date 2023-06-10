@@ -77,8 +77,9 @@ function eliminarDelCarro(evento){
 
 function sumarAlTotal(){
     const sumaTotal = articulosEnElCarro.reduce((acumulador,articulo) => acumulador + (articulo.precio * articulo.cantidad), 0 );
+    numeroTotal.innerText = `$${sumaTotal}`;
 
-    total.innerText = `$${sumaTotal}`;
+    /* total.innerText = `$${sumaTotal}`; */
 }
 
 comprar.addEventListener("click",hacerLaCompra);
@@ -90,13 +91,13 @@ function hacerLaCompra(){
     vacio.classList.add("disabled");
     articulos.classList.add("disabled");
     carroVaciar.classList.add("disabled");
-
+/* 
     Swal.fire({
         position: 'center',
         icon: 'success',
         title: 'Muchas Gracias por tu Compra.',
         showConfirmButton: false,
         timer: 2000
-    })
+    }) */
 }
 

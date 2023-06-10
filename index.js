@@ -5,13 +5,13 @@ fetch("./tarjetas.json")
     .then(data => {
         articulos = data;
         subirArticulos(articulos);
-    })
+    });
 
 const contenedorArticulos = document.querySelector (".container-cards");
 let boton = document.querySelectorAll(".boton-agregar");
 let numeroDelCarrito = document.querySelector("#contador-productos");
 
-function subirArticulos(){
+function subirArticulos(articulos){
 
     contenedorArticulos.innerHTML ="";
 
@@ -30,7 +30,7 @@ function subirArticulos(){
             </div>
                     `;
         contenedorArticulos.append(div);
-    })
+    });
 
     sumarBoton();
 }
@@ -55,7 +55,7 @@ if(articulosEnElCarroLocalStorage){
 
 }else{
 
-    articulosEnElCarro = [ ];
+    articulosEnElCarro = [];
 }
 
 function agregarAlCarro(evento){
