@@ -80,6 +80,31 @@ function sumarAlTotal(){
     numeroTotal.innerText = `$${sumaTotal}`;
 }
 
+
+function finalizarCompra() {
+    const tareaAsincronica = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(Swal.fire({
+                position: 'center',
+                icon: 'info',
+                title: 'Cargando...',
+                showConfirmButton: false,
+                timer: 6000
+            }));
+        }, 1000);
+    });
+    
+    tareaAsincronica.then((resultado) => {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Muchas Gracias por tu Compra.',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    });
+}
+
 comprar.addEventListener("click",hacerLaCompra);
 function hacerLaCompra(){
 
@@ -90,12 +115,8 @@ function hacerLaCompra(){
     articulos.classList.add("disabled");
     carroVaciar.classList.add("disabled");
 
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Muchas Gracias por tu Compra.',
-        showConfirmButton: false,
-        timer: 2000
-    })
+    finalizarCompra();
 }
+
+
 
